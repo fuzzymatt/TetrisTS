@@ -1,0 +1,128 @@
+.app {
+  display: grid;
+  grid-template-areas:
+    ". title ."
+    ". game controls";
+  grid-template-columns: repeat(3, 1fr);
+  background: linear-gradient(to right, #ece9e6, #ffffff); /* Gradient background */
+  padding: 20px; /* Added padding */
+  background-image: url("https://i.ibb.co/dBhpdWW/DALL-E-2023-05-13-23-03-44-stick-man-floating-in-outerspace.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+h1 {
+  text-align: center;
+  grid-area: title;
+  font-family: 'Press Start 2P', comic-sans; /* Retro gaming font */
+  color: #0a8f58;
+}
+.controls h2 {
+  color: rgb(255, 0, 0);
+}
+body {
+  background-color: #000911;
+  background-image: url('https://i.ibb.co/dBhpdWW/DALL-E-2023-05-13-23-03-44-stick-man-floating-in-outerspace.png');
+}
+
+button {
+  padding: 4px;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+button:hover {
+  background-color: #888; /* Hover effect */
+}
+
+.board {
+  border: 2px solid black;
+  user-select: none;
+  margin: auto;
+  grid-area: game;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.027); /* semi-transparent white */
+}
+
+.button-spacing {
+  margin-top: 5px; /* adjust as needed */
+}
+
+.controls {
+  grid-area: controls;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  width: 30px;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  border-radius: 3px; /* Rounded corners */
+  transition: background-color 0.1s ease; /* Transition for smoother color change */
+  background-color: rgba(255, 255, 255, 0.014); /* semi-transparent white */
+}
+
+
+.row {
+  display: flex;
+}
+
+.upcoming {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cell.Empty {
+  background: rgba(255, 255, 255, 0.027); 
+}
+
+.cell.I {
+  background-color: rgb(80, 227, 230);
+}
+
+.cell.J {
+  background-color: rgb(36, 95, 223);
+}
+
+.cell.L {
+  background-color: rgb(223, 173, 36);
+}
+
+.cell.O {
+  background-color: rgb(223, 217, 36);
+}
+
+.cell.S {
+  background-color: rgb(48, 211, 56);
+}
+
+.cell.T {
+  background-color: rgb(132, 61, 198);
+}
+
+.cell.Z {
+  background-color: rgb(227, 78, 78);
+}
+
+.score {
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.score.low {
+  color: red;
+}
+
+.score.medium {
+  color: yellow;
+}
+
+.score.high {
+  color: green;
+}
+
+

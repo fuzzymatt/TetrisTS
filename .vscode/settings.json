@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/436a296a-0570-464d-992a-3a4da60a911e/resourceGroups/TetrisApp_group/providers/Microsoft.Web/sites/TetrisApp",
+    "appService.deploySubpath": "."
+}
