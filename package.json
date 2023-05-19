@@ -19,17 +19,11 @@
 ],
 
 "scripts": {
-
   "start": "vite",
-
   "build": "rimraf dist && tsc && vite build",
-
   "ts.check": "tsc --project tsconfig.json --noEmit",
-
-  "add-build": "yarn build",
-
+  "add-build": "npm run build",
   "test": "jest"
-
 },
 
 

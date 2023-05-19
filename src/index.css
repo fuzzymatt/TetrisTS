@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
 .app {
   display: grid;
   grid-template-areas:
@@ -5,12 +15,15 @@
     ". game controls";
   grid-template-columns: repeat(3, 1fr);
   background: linear-gradient(to right, #ece9e6, #ffffff); /* Gradient background */
-  padding: 20px; /* Added padding */
+  
   background-image: url("https://i.ibb.co/dBhpdWW/DALL-E-2023-05-13-23-03-44-stick-man-floating-in-outerspace.png");
   background-repeat: no-repeat;
   background-size: cover;
- 
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
 }
+
 
 h1 {
   text-align: center;
@@ -21,10 +34,7 @@ h1 {
 .controls h2 {
   color: rgb(255, 0, 0);
 }
-body {
-  background-color: #000911;
-  background-image: url('https://i.ibb.co/dBhpdWW/DALL-E-2023-05-13-23-03-44-stick-man-floating-in-outerspace.png');
-}
+
 
 button {
   padding: 4px;
